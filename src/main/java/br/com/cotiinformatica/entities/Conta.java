@@ -135,5 +135,3 @@ public class Conta {
 		return this.idConta.hashCode();
 	}
 }
-
-

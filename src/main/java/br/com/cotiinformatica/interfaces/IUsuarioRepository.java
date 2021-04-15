@@ -14,5 +14,3 @@ public interface IUsuarioRepository extends CrudRepository<Usuario, Integer> {
 	@Query("select u from Usuario u where u.email = :param1 and u.senha = :param2")
 	Usuario findByEmailSenha(@Param("param1") String email, @Param("param2") String senha);
 }
-
-

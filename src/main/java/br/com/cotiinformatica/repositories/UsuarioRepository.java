@@ -30,5 +30,3 @@ public class UsuarioRepository {
 		return usuarioRepository.findByEmailSenha(email, senha);
 	}
 }
-
-

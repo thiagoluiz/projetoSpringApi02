@@ -3,7 +3,6 @@ package br.com.cotiinformatica.repositories;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.Id;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +28,8 @@ public class ContaRepository {
 		contaRepository.delete(conta);
 	}
 	
-	public Conta findById(Integer id) throws Exception{
+	//método para buscar 1 conta pelo id
+	public Conta findById(Integer id) throws Exception {
 		return contaRepository.findById(id).get();
 	}
 
@@ -39,5 +39,3 @@ public class ContaRepository {
 	}
 
 }
-
-

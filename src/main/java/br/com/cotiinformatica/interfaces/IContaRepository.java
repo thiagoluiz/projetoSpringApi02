@@ -16,5 +16,3 @@ public interface IContaRepository extends CrudRepository<Conta, Integer> {
 			@Param("param3") Integer idUsuario);
 
 }
-
-

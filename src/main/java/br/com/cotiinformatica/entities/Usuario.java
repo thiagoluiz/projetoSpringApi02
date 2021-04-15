@@ -15,10 +15,13 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "IDUSUARIO")
 	private Integer idUsuario;
+	
 	@Column(name = "NOME", length = 150, nullable = false)
 	private String nome;
+	
 	@Column(name = "EMAIL", length = 100, nullable = false, unique = true)
 	private String email;
+	
 	@Column(name = "SENHA", length = 50, nullable = false)
 	private String senha;
 
@@ -87,6 +90,3 @@ public class Usuario {
 		return this.idUsuario.hashCode();
 	}
 }
-
-
-
